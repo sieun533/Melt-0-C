@@ -1,0 +1,17 @@
+{
+  "name": "melt-0-c",
+  "version": "1.0.0",
+  "main": "main.js",
+  "homepage": "https://sieun533.github.io/Melt-0-C",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}
