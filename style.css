@@ -1,0 +1,2187 @@
+@charset "utf-8"; 
+/* 리셋 CSS */
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    background-color: #000000;
+    overflow-x: hidden;
+    font-family: "Pretendard Variable", "HaasGrot Disp 55 Rm Trial";
+    color: #525252;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+ul, li {
+    list-style: none;
+}
+img {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* 디버깅 테스트용 */
+.red {
+    border: 1px solid red;  
+}
+/* 헤더 스타일 */
+header {
+    position: absolute;  
+    display: flex;
+    width: 100%;
+    height: 8.796vh;
+    padding-left: 2.5rem;
+    padding-right: 3.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 3.021vw;
+    font-family: "HaasGrot Disp 55 Rm Trial";
+    color: #00FF48;
+}
+nav {
+    display: flex;
+    font-size: 1.04vw;
+    font-family: "Pretendard Variable";
+    color: #fff;
+    flex-wrap: wrap;
+    gap: 2.625rem;
+}
+
+/* 메인 페이지 */
+.intro {
+    width: 100vw;
+    min-height: 101.204vh;
+    height: auto;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%, 
+        rgba(0, 255, 72, 0.09) 77%)
+}
+.intro h1 {
+    position: absolute;
+    top: 95%;
+    right: 1.927vw;
+    font-family: "Pretendard Variable";
+    font-size: 1.375rem;
+    font-weight: 400;
+    color: #00FF48;
+}
+
+.intro span {
+    display: none;
+    position: absolute;
+    font-family: "Pretendard Variable";
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #fff;
+    
+}
+.icon {
+    position: absolute;
+}
+.icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.i_Hexora {
+    width: 13.646vw;
+    height: 23.333vh;
+    top: 25.74%;
+    left: 5.26%;
+    z-index: 10;
+}
+.i_Astrax {
+    width: 31.789vw;
+    height: 55.118vh;
+    top: 6.85%;
+    left: 24.58%; 
+}
+.i_Dormicore {
+    top: 17.29%;
+    left: 57.68%;
+    transform: rotate(4.1deg);
+}
+.i_Cryohelix {
+    top: 14.38%;
+    right: 0;
+}
+.i_Segmentra {
+    top: 53.23%;
+    left: 0;
+}
+.i_Amoeth {
+    bottom: 0%;
+    left: 4.48%;
+}
+.i_Trilucis {
+    top: 65.19%;
+    left: 49.53%;
+}
+.i_Tremora {
+    top: 57.04%;
+    left: 79.58%;
+}
+.intro_paticle {
+    position: absolute;
+    bottom: 2.41%;
+    left: 3.073vw;
+    z-index: 1;
+}
+
+/* Project 페이지 */
+#Project {
+
+}
+/* 콘텐츠 전체 라벨 및 타이틀 설정 */
+main .page_label {
+    display: block;
+    margin-bottom: 2.3vh;
+    font-family: "Pretendard Variable";
+    font-size: 1.04vw;
+    line-height: 1.5;
+    letter-spacing: 0.0104vw;
+    color:#00FF48;
+}
+main .page_title {
+    margin-bottom: 4.63vh;
+    font-family: "Pretendard Variable";
+    font-size: 1.823vw;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.0182vw;
+    color: #fff;
+}
+main .page_title span {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+}
+
+/* 개별 페이지 스타일 overview */
+.overview {
+    width: 100%;
+    height: 74.72vh;
+    margin-top: 9.91vh;
+    background-image: url(img/overview_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+}
+.overview p {
+    font-family: "Pretendard Variable";
+    font-size: 1.04vw;
+    font-weight: 400;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.8);
+}
+.overview p span {
+    display: block;
+    margin: 0;
+    padding: 0;
+    letter-spacing: -0.005em;
+}
+
+/* 개별 페이지 스타일 DeskResearch */
+.DeskResearch {
+    width: 100%;
+    /* height: 92.5vh; */
+    margin-bottom: 17.593vh;
+} 
+.DR_content {
+    position: relative;
+    width: 100%;
+    height: 95.37vh;
+    padding: 17.5vh 10.5vw 0;
+    margin: 0 auto;
+    background-image: url(img/background_ice.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.DR_content span {
+    margin-bottom: 3.056vh;
+    font-weight: 500;
+}
+
+.case_container {
+    display: flex;
+    justify-content: space-between;
+}
+.case_box {
+    position: relative;
+    width: 24.219vw;
+    height: 32.407vh;
+    margin-top: 24.5vh;
+    padding: 4.352vh 2vw;
+    background-color: #111111;
+    border-radius: 1.563vw;
+}
+.DeskResearch .case_box div {
+    /* display: block; */
+    position: absolute;
+    top: -2.778vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4.688vw;
+    height: 2.778vh;
+    border-radius: 0.755vw;
+    background-color: #00FF48;
+    text-align: center;
+    line-height: 2.778vh;
+    font-family: "HaasGrot Disp 55 Rm Trial";
+    font-size: 1.04vw;
+    font-weight: 900;
+    color: #000;
+}
+.case_box h3 {
+    margin-bottom: 7.685vh;
+    font-family: "Pretendard Variable";
+    font-size: 1.04vw;
+    font-weight: 600;
+    line-height: 150%;
+    color:#00FF48;
+}
+.case_box p {
+    margin-bottom: 1.296vh;
+    font-family: "Pretendard Variable";
+    font-size: 0.781vw;
+    font-weight: 400;
+    line-height: 2.315vh;
+    color:#fff;
+}
+.case_box small {
+    font-family: "Pretendard Variable";
+    font-size: 0.612vw;
+    font-weight: 400;
+    line-height: 2.315vh;
+    color: rgba(255,255,255,.4);
+}
+.message_line {
+    width: 0.313vw;
+    height: 24.074vh;
+    margin: 3.2vh auto 0;
+    background-image: url(img/DR_line.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.message_box {
+    display: flex;
+    width: 79.375vw;
+    height: 36.667vh;
+    margin: 0 auto 1.111vh;
+    background-image: url(img/DR_textBox.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3.281vw;
+}
+.message_box h2 span{
+    display: block;
+    font-size: 1.823vw;
+    font-family: "Pretendard Variable";
+    text-align: center;
+    line-height: 1.4;
+    color:#00FF48;
+}
+.purpose {
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/purpose_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.FieldResearch {
+    width: 100%;
+    height: 227.604vw;
+    background-image: url(img/Fr_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.FR_content {
+    padding: 36.481vh 10.5vw 0;
+}
+.survey_container {
+    display: flex;
+    margin: 14.815vh 0 9.464vw;
+    justify-content: space-between;
+}
+.survey_box {
+    height: 55.55vh;
+    padding: 5.556vh 3.125vw;
+    border-radius: 1.563vw;
+    background-color: #111;
+}
+.graph1 {
+    position: relative;
+}
+.graph1 .sb1 {
+    width: 46.615vw;
+}
+.graph2 .sb2 {
+    width: 31.51vw;
+}
+.label_survey {
+    position: absolute;
+    left: 3.125vw;
+    transform: translateY(-100%);
+    padding: 0.3vh 0.7vw;
+    background-color: #00FF48;
+    border-radius: 0.781vw;
+    text-align: center;
+    font-family: "Pretendard Variable";
+    font-size: 1.04vw;
+    font-weight: 900;
+    color: #000;
+}
+.survey_title {
+    margin-bottom: 6.2vh;
+    font-family: "Pretendard Variable";
+    font-size: 1.458vw;
+    color: #fff;
+}
+.survey_title .text {
+    display: block;
+    line-height: 1.5;
+}
+.text_G {
+    display: inline;
+    color: #00FF48;
+}
+.graph_container {
+    display: flex;
+    justify-content: space-between;
+}
+.graph_container img {
+    width: 30vh;
+    height: 30vh;
+}
+.graph2 .Q_text {
+    margin-bottom: 3.056vh;
+    font-family: "Pretendard Variable";
+    font-size: 1.04vw;
+    font-weight:600;
+    color: #8f8f8f;
+}
+.graph2 img {
+    width: 24.528vw;
+    height: 19.695vh;
+}
+
+.interview {
+    position: relative;
+    width: 100%;
+}
+.interview .label_interview {
+    position: absolute;
+    transform: translateY(-250%);
+    margin-left: 1.04vw;
+    padding: 0.3vh 0.7vw;
+    border-radius: 0.781vw;
+    background-color: #00FF48;
+    text-align: center;
+    font-family: "Pretendard Variable";
+    font-size: 1.04vw;
+    font-weight: 900;
+    color: #000;
+}
+.interview .name {
+    margin-bottom: 0.926vh;
+    font-family: "Pretendard Variable";
+    font-size: 1.3vw;
+    font-weight: 500;
+    color: #00FF48;
+}
+.interview .details {
+    font-family: "Pretendard Variable";
+    font-size: 1.04vw;
+    font-weight: 600;
+    color: #9c9c9c;
+}
+.intervieweeInof img {
+    margin-bottom: 3.7vh;
+}
+.interview_container1 {
+    display: flex;
+    /* height: 26.85vh; */
+    margin-top: 3.7vh;
+    margin-bottom: 4vh;
+    justify-content: space-between;
+}
+.interview_container2 {
+    display: flex;
+    /* height: 26.85vh; */
+    justify-content: space-between;
+}
+
+/* 개별 페이지 스타일 insight */
+.insight {
+    width: 100%;
+    height: 56.25vw;
+    padding-top: 12.083vw;
+}
+.insight .page_label {
+    text-align: center;
+}
+.insight .page_title {
+    text-align: center;
+}
+.insight .insight_content {
+    position: relative;
+    width: 100vw;
+    height: 27.396vw;
+}
+.insight1 {
+    position: relative;
+    top: 4.427vw;
+}
+.insight2 {
+    position: relative;
+    top: 0;
+}
+.insight3 {
+    position: relative;
+    top: 7.708vw;
+}
+.insightLine1 {
+    position: relative;
+    top: -7.396vw;
+}
+.insightLine2 {
+    position: relative;
+    top: -2.836vw;
+}
+/* 멜트 소개 페이지 */
+.melt0 {
+    position: relative;
+    width: 100%;
+    padding-top: 1px;
+}
+.melt0 .V1 {
+    position: absolute;
+    top: 12.03vw;
+    animation: float 3s ease-in-out infinite;
+}
+.melt0 .V2 {
+    position: absolute;
+    top: 34.06vw;
+    left: 14.844vw;
+    animation: float 3.5s ease-in-out infinite;
+    animation-delay: 0.5s;
+}
+.melt0 .V3 {
+    position: absolute;
+    top: 3.698vw;
+    right: 17.482vw;
+    animation: float 2.8s ease-in-out infinite;
+    animation-delay: 1s;
+}
+.melt0 .V4 {
+    position: absolute;
+    top: 24.115vw;
+    right: 0;
+    animation: float 3.2s ease-in-out infinite;
+    animation-delay: 0.2s;
+}
+.melt_info {
+    display: block;
+    width: 44.792vw;
+    height: 14.375vw;
+    margin: 25.05vw auto 0;
+}
+@keyframes float {
+    0% {
+        transform: translateY(0vw); /* 시작: 원래 위치 */
+    }
+    50% {
+        transform: translateY(-0.8vw); /* 중간: 10px 위로 이동 */
+    }
+    100% {
+        transform: translateY(0vw); /* 끝: 원래 위치로 복귀 */
+    }
+}
+
+
+/* 포지셔닝맵 */
+.positioningmap {
+    position: relative;
+    width: 100%;
+    height: 60.938vw;
+    padding: 14.583vw 10.417vw 0;
+}
+.pos_map {
+    position: absolute;
+}
+.pos_melt {
+    position: absolute;
+    top: 22.656vw;
+    left: 73.854vw;
+    animation: opacity 3s linear infinite;
+}
+@keyframes opacity {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
+
+/* 전시장소 교육 문화 */
+.practical {
+    width: 100%;
+    height: 67.865vw;
+    padding: 9.844vw 0 0 10.417vw;
+}
+.practical_title {
+    width: 16.927vw;
+    height: 8.385vw;
+    margin-bottom: 7.135vw;
+}
+.practical_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btns {
+    display: flex;
+    width: 8.75vw;
+    height: 14.479vw;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.btns span {
+    position: absolute;
+    width: 0.573vw;
+    height: 0.573vw;
+    background-color: #00FF48;
+    border-radius: 10vw;
+}
+.btn_J {
+    position: relative;
+    width: 4.896vw;
+    height: 1.875vw;
+    font-size: 1.25vw;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: -0.0125vw;
+    color: #00FF48;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+.O2 {
+    display: inline-block;
+}
+.btn_G {
+    position: relative;
+    width: 7.031vw;
+    height: 1.875vw;
+    font-size: 1.25vw;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: -0.0125vw;
+    color: #5F5F5F;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+.O2 {
+    display: none;
+}
+.btn_M {
+    position: relative;
+    width: 8.698vw;
+    height: 1.875vw;
+    font-size: 1.25vw;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: -0.0125vw;
+    color: #5F5F5F;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+.O3 {
+    display: none;
+}
+.practical_img {
+    width: 69.271vw;
+    height: 23.333vw;
+    background-image: url(img/practical_content1.png);
+    background-repeat: no-repeat;
+    transition: filter 0.5s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+/* 개별 페이지 스타일 design_concept */
+#Design {
+    width: 100%;
+}
+.design_concept {
+    width: 100%;
+}
+.design_concept .page_label {
+    margin: 17.5vh 10.5vw 2.3vh;
+}
+.design_concept .page_title {
+    margin: 0 10.5vw 4.63vh;
+}
+.design_concept p {
+    margin: 0 8vw 5.37vh 50.73vw;
+    font-size: 1.04vw;
+    font-weight: 400;
+    color: rgba(255,255,255,0.8);
+    line-height: 1.75;
+}
+.design_contanier {
+    /* position: relative; */
+    width: 100%;
+}
+.design_word {
+    display: flex;
+}
+.design_word h5 {
+    font-family: "Pretendard Variable";
+    font-size: 1.04vw;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.design_word .logo_box {
+    width: 50vw;
+    height: 30.05vw;
+    padding: 4.63vh 3.906vw;
+    background-color: #00FF48;
+}
+.logo_box h5 {
+    margin-bottom: 9.54vh;
+    color: #141516;
+}
+.design_word .keyword_box {
+    width: 50vw;
+    height: 30.05vw;;
+    padding: 4.63vh 3.906vw;
+    background-color: #141516;
+}
+.keyword_box h5 {
+    margin-bottom: 16.48vh;
+    color: #9B9B9B;
+}
+.keyword-item {
+    display: flex;
+    margin-bottom: 0.926vh;
+    justify-content: space-between;
+    align-items: center;
+}
+.keyword-item .english-word {
+    font-size: 2.865vw;
+    font-family: "HaasGrot Disp 55 Rm Trial";
+    line-height: 1.5;
+    letter-spacing: -0.02865vw;
+    color: #fff;
+}
+.keyword-item .korean-word {
+    font-size: 1.56vw;
+    line-height: 1.5;
+    letter-spacing: -0.0156vw;
+    color: #fff;
+}
+.design_color {
+    width: 100%;
+    background-color: #1E1E1E;
+}
+.design_color .color_guide {
+    position: relative;
+    height: 54.537vh;
+}
+.color_guide img {
+    position: absolute;
+}
+.color_guide .color_1 {
+    width: 7.708vw;
+    height: 7.708vw;
+    top: 15.185vh;
+    left: 4.427vw;
+}
+.color_guide .color_2 {
+    width: 7.708vw;
+    height: 7.708vw;
+    top: 28.89vh;
+    left: 16.51vw;
+}
+.color_guide .color_3 {
+    width: 8.594vw;
+    height: 7.708vw;
+    top: 23.056vh;
+    left: 33.8vw;
+}
+.color_guide .color_4 {
+    width: 7.708vw;
+    height: 7.708vw;
+    top: 50.463vh;
+    right: 36.98vw;
+}
+.color_guide .color_5 {
+    width: 7.708vw;
+    height: 7.708vw;
+    top: 12.315vh;
+    right: 31.667vw;
+}
+.color_guide .color_6 {
+    width: 7.917vw;
+    height: 8.54vw;
+    top: 26.02vh;
+    right: 19.531vw;
+}
+.color_guide .color_7 {
+    width: 8.281vw;
+    height: 8.02vw;
+    top: 7.778vh;
+    right: 1.406vw;
+}
+.design_color .color_info {
+    padding: 0 4.425vw 5.83vh;
+}
+.design_color .page_label {
+    margin: 0 0 1.4vh 0;
+}
+.design_color .info_text {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.info_text .en_info {
+    margin: 0 0;
+    font-size: 2.865vw;
+    font-family: "HaasGrot Disp 55 Rm Trial";
+    line-height: 1.5;
+    letter-spacing: -0.02865vw;
+    color: #fff;
+}
+.info_text .ko_info {
+    margin: 0 0;
+    font-size: 1.563vw;
+    font-family: "Pretendard Variable";
+    line-height: 1.5;
+    letter-spacing: -0.0156vw;
+    color: #fff;
+}
+
+.viruses {
+    width: 100%;
+    padding: 9.844vw 0 10.573vw;
+}
+.section_title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 9.85vw;
+}
+.section_title .highlight_tag {
+    display: inline-flex;
+    margin-left: 10.417vw;
+    padding: 0.3vh 1vw;
+    font-size: 1.563vw;
+    font-family: "Pretendard Variable";
+    line-height: 1.5;
+    letter-spacing: -0.0468vw;
+    color: #000;
+    border-radius: 1.38vw;
+    background-color: #00FF48;
+}
+.section_title p {
+    position: absolute;
+    width: 27.6vw;
+    left: 51vw;
+    font-size: 1.04vw;
+    font-family: "Pretendard Variable";
+    font-weight: 400;
+    color: rgba(255,255,255,0.8);
+    line-height: 1.75;
+}
+.viruses.section_title .highlight_tag {
+
+}
+.virus_image_container {
+    position: relative;
+    width: 100%;
+    height: 70.99vw;
+}
+.virus_image_container img {
+    position: absolute;
+}
+.v_img_astrax {
+    top: 1.51vw;
+    left: 8.23vw;
+}
+.v_img_segmentra {
+    top: 6.719vw;
+    left: 35.94vw;
+    transform: rotate(24.87deg);
+}
+.v_img_trilucis {
+    top: 0;
+    right: 10.833vw;
+}
+.v_img_cryohelix {
+    top: 21.51vw;
+    right: 19.48vw;
+}
+.v_img_tremora {
+    top: 37.188vw;
+    left: 11.875vw;
+}
+.v_img_hexora {
+    top: 50.885vw;
+    right: 9.48vw;
+}
+.v_img_dormicore {
+    top: 54.39vw;
+    left: 33.26vw;
+    transform: rotate(-25.12deg);
+}
+.v_img_amoeth {
+    top: 41.195vw;
+    right: 36.366vw;
+    transform: rotate(30.97deg);
+}
+.virus_image_container .name_box {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+.name_box span:nth-child(1) {
+    display: flex;
+    padding: 0 0.4vw;
+    font-size: 1.42vw;
+    font-family: "HaasGrot Disp 55 Rm Trial";
+    font-weight: 600;
+    line-height: 1.563vw;
+    letter-spacing: -0.02865vw;
+    background-color: #00FF48;
+    color: #000;
+}
+.name_box span:nth-child(2) {
+    font-size: 1.042vw;
+    font-family: "Pretendard Variable";
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: -0.03126vw;
+    color: #fff;
+}
+.virus_image_container .name1 {
+    top: 19.583vw;
+    left: 25.104vw;
+}
+.virus_image_container .name2 {
+    top: 28.854vw;
+    left: 46.146vw;
+}
+.virus_image_container .name3 {
+    top: 11.98vw;
+    right: 20.21vw;
+}
+.virus_image_container .name4 {
+    top: 36.927vw;
+    right: 17.708vw;
+}
+.virus_image_container .name5 {
+    top: 35.885vw;
+    left: 7.552vw;
+}
+.virus_image_container .name6 {
+    top: 61.458vw;
+    left: 22.292vw;
+}
+.virus_image_container .name7 {
+    top: 45.26vw;
+    right: 43.542vw;
+}
+.virus_image_container .name8 {
+    top: 66.51vw;
+    right: 19.01vw;
+}
+
+/* serma video 페이지 */
+.serma {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 17.813vw;
+}
+.serma .section_title {
+    position: absolute;
+    top: 12.135vw;
+}
+.serma_video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* story video 페이지 */
+.story {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10vh;
+}
+.story .section_title {
+    position: absolute;
+    top: 2.448vw;
+    z-index: 3;
+}
+.story_text {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    top: 11.3vw;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 3;
+}
+.story .story_ko {
+    width: 31.46vw;
+    margin: 0 auto;
+    margin-bottom: 0.78vw;
+    font-size: 1.042vw;
+    font-family: "Pretendard Variable";
+    font-weight: 400;
+    line-height: 1.8;
+    color: #fff;
+    text-align: center;
+}
+.story .story_en {
+    width: 44.167vw;
+    margin: 0 auto;
+    font-size: 1.042vw;
+    font-family: "Pretendard Variable";
+    font-weight: 400;
+    line-height: 1.5;
+    color: #4F4F4F;
+    text-align: center;
+}
+.story .story_en span {
+    display: inline-block;
+}
+.clock_video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    z-index: 1;
+}
+.thermometer {
+
+}
+.thermometer_video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.style_guide {
+    width: 100%;
+    padding: 13.8vw 7.03vw 7.656vw 7.03vw;
+}
+
+.used_products {
+    width: 100%;
+    padding: 9.427vw 10.313vw 5.729vw;
+}
+.interactive_moments {
+    position: relative;
+    width: 100%;
+    height: 60.469vw;
+    padding: 5.208vw 0 9.635vw 4.792vw;
+}
+.interactive_img {
+    position: absolute;
+}
+.move_btns {
+    position: absolute;
+    top: 41.094vw;
+    left: 25.156vw;
+    display: flex;
+    width: 9.323vw;
+    justify-content: space-between;
+}
+.move_btns .prev_btn {
+    width: 3.802vw;
+    height: 3.02vw;
+    background-image: url(img/prev_f.png);
+}
+.move_btns .next_btn {
+    width: 3.802vw;
+    height: 3.02vw;
+    background-image: url(img/next_t.png);
+}
+.move_btns .prev_btn, .move_btns .next_btn {
+    width: 3.802vw;
+    height: 3.02vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background-image 0.2s ease-in-out;
+}
+.btn-disabled {
+    cursor: default;
+}
+.btn-disabled:hover {
+    opacity: 1;
+    transform: scale(1);
+}
+.btn-active {
+    cursor: pointer;
+}
+
+.btn-active {
+    cursor: pointer;
+}
+.next_btn.btn-active:hover {
+    background-image: url(img/next_h.png) !important;
+}
+.prev_btn.btn-active:hover {
+    background-image: url(img/prev_h.png) !important;
+}
+.interactive_img {
+    width: 100%; 
+    height: auto;
+    /* transition: opacity 0.3s ease-in-out;  */
+}
+.final_video {
+    width: 100%;
+    height: 56.25vw;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 25.833vw;
+    padding: 2.604vw 4.427vw 3.646vw;
+    background-color: #141516;
+    justify-content: space-between;
+    align-items: flex-end;
+}@charset "utf-8"; 
+/* 리셋 CSS */
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    background-color: #000000;
+    overflow-x: hidden;
+    font-family: "Pretendard Variable", "HaasGrot Disp 55 Rm Trial";
+    color: #525252;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+ul, li {
+    list-style: none;
+}
+img {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* 디버깅 테스트용 */
+.red {
+    border: 1px solid red;  
+}
+/* 헤더 스타일 */
+header {
+    position: absolute;  
+    display: flex;
+    width: 100%;
+    height: 8.796vh;
+    padding-left: 2.5rem;
+    padding-right: 3.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 3.021vw;
+    font-family: "HaasGrot Disp 55 Rm Trial";
+    color: #00FF48;
+}
+nav {
+    display: flex;
+    font-size: 1.04vw;
+    font-family: "Pretendard Variable";
+    color: #fff;
+    flex-wrap: wrap;
+    gap: 2.625rem;
+}
+
+/* 메인 페이지 */
+.intro {
+    width: 100vw;
+    min-height: 101.204vh;
+    height: auto;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%, 
+        rgba(0, 255, 72, 0.09) 77%)
+}
+.intro h1 {
+    position: absolute;
+    top: 95%;
+    right: 1.927vw;
+    font-family: "Pretendard Variable";
+    font-size: 1.375rem;
+    font-weight: 400;
+    color: #00FF48;
+}
+
+.intro span {
+    display: none;
+    position: absolute;
+    font-family: "Pretendard Variable";
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #fff;
+    
+}
+.icon {
+    position: absolute;
+}
+.icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.i_Hexora {
+    width: 13.646vw;
+    height: 23.333vh;
+    top: 25.74%;
+    left: 5.26%;
+    z-index: 10;
+}
+.i_Astrax {
+    width: 31.789vw;
+    height: 55.118vh;
+    top: 6.85%;
+    left: 24.58%; 
+}
+.i_Dormicore {
+    top: 17.29%;
+    left: 57.68%;
+    transform: rotate(4.1deg);
+}
+.i_Cryohelix {
+    top: 14.38%;
+    right: 0;
+}
+.i_Segmentra {
+    top: 53.23%;
+    left: 0;
+}
+.i_Amoeth {
+    bottom: 0%;
+    left: 4.48%;
+}
+.i_Trilucis {
+    top: 65.19%;
+    left: 49.53%;
+}
+.i_Tremora {
+    top: 57.04%;
+    left: 79.58%;
+}
+.intro_paticle {
+    position: absolute;
+    bottom: 2.41%;
+    left: 3.073vw;
+    z-index: 1;
+}
+
+/* Project 페이지 */
+#Project {
+
+}
+/* 콘텐츠 전체 라벨 및 타이틀 설정 */
+main .page_label {
+    display: block;
+    margin-bottom: 2.3vh;
+    font-family: "Pretendard Variable";
+    font-size: 1.04vw;
+    line-height: 1.5;
+    letter-spacing: 0.0104vw;
+    color:#00FF48;
+}
+main .page_title {
+    margin-bottom: 4.63vh;
+    font-family: "Pretendard Variable";
+    font-size: 1.823vw;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.0182vw;
+    color: #fff;
+}
+main .page_title span {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+}
+
+/* 개별 페이지 스타일 overview */
+.overview {
+    width: 100%;
+    height: 74.72vh;
+    margin-top: 9.91vh;
+    background-image: url(img/overview_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+}
+.overview p {
+    font-family: "Pretendard Variable";
+    font-size: 1.04vw;
+    font-weight: 400;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.8);
+}
+.overview p span {
+    display: block;
+    margin: 0;
+    padding: 0;
+    letter-spacing: -0.005em;
+}
+
+/* 개별 페이지 스타일 DeskResearch */
+.DeskResearch {
+    width: 100%;
+    /* height: 92.5vh; */
+    margin-bottom: 17.593vh;
+} 
+.DR_content {
+    position: relative;
+    width: 100%;
+    height: 95.37vh;
+    padding: 17.5vh 10.5vw 0;
+    margin: 0 auto;
+    background-image: url(img/background_ice.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.DR_content span {
+    margin-bottom: 3.056vh;
+    font-weight: 500;
+}
+
+.case_container {
+    display: flex;
+    justify-content: space-between;
+}
+.case_box {
+    position: relative;
+    width: 24.219vw;
+    height: 32.407vh;
+    margin-top: 24.5vh;
+    padding: 4.352vh 2vw;
+    background-color: #111111;
+    border-radius: 1.563vw;
+}
+.DeskResearch .case_box div {
+    /* display: block; */
+    position: absolute;
+    top: -2.778vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4.688vw;
+    height: 2.778vh;
+    border-radius: 0.755vw;
+    background-color: #00FF48;
+    text-align: center;
+    line-height: 2.778vh;
+    font-family: "HaasGrot Disp 55 Rm Trial";
+    font-size: 1.04vw;
+    font-weight: 900;
+    color: #000;
+}
+.case_box h3 {
+    margin-bottom: 7.685vh;
+    font-family: "Pretendard Variable";
+    font-size: 1.04vw;
+    font-weight: 600;
+    line-height: 150%;
+    color:#00FF48;
+}
+.case_box p {
+    margin-bottom: 1.296vh;
+    font-family: "Pretendard Variable";
+    font-size: 0.781vw;
+    font-weight: 400;
+    line-height: 2.315vh;
+    color:#fff;
+}
+.case_box small {
+    font-family: "Pretendard Variable";
+    font-size: 0.612vw;
+    font-weight: 400;
+    line-height: 2.315vh;
+    color: rgba(255,255,255,.4);
+}
+.message_line {
+    width: 0.313vw;
+    height: 24.074vh;
+    margin: 3.2vh auto 0;
+    background-image: url(img/DR_line.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.message_box {
+    display: flex;
+    width: 79.375vw;
+    height: 36.667vh;
+    margin: 0 auto 1.111vh;
+    background-image: url(img/DR_textBox.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3.281vw;
+}
+.message_box h2 span{
+    display: block;
+    font-size: 1.823vw;
+    font-family: "Pretendard Variable";
+    text-align: center;
+    line-height: 1.4;
+    color:#00FF48;
+}
+.purpose {
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/purpose_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.FieldResearch {
+    width: 100%;
+    height: 227.604vw;
+    background-image: url(img/Fr_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.FR_content {
+    padding: 36.481vh 10.5vw 0;
+}
+.survey_container {
+    display: flex;
+    margin: 14.815vh 0 9.464vw;
+    justify-content: space-between;
+}
+.survey_box {
+    height: 55.55vh;
+    padding: 5.556vh 3.125vw;
+    border-radius: 1.563vw;
+    background-color: #111;
+}
+.graph1 {
+    position: relative;
+}
+.graph1 .sb1 {
+    width: 46.615vw;
+}
+.graph2 .sb2 {
+    width: 31.51vw;
+}
+.label_survey {
+    position: absolute;
+    left: 3.125vw;
+    transform: translateY(-100%);
+    padding: 0.3vh 0.7vw;
+    background-color: #00FF48;
+    border-radius: 0.781vw;
+    text-align: center;
+    font-family: "Pretendard Variable";
+    font-size: 1.04vw;
+    font-weight: 900;
+    color: #000;
+}
+.survey_title {
+    margin-bottom: 6.2vh;
+    font-family: "Pretendard Variable";
+    font-size: 1.458vw;
+    color: #fff;
+}
+.survey_title .text {
+    display: block;
+    line-height: 1.5;
+}
+.text_G {
+    display: inline;
+    color: #00FF48;
+}
+.graph_container {
+    display: flex;
+    justify-content: space-between;
+}
+.graph_container img {
+    width: 30vh;
+    height: 30vh;
+}
+.graph2 .Q_text {
+    margin-bottom: 3.056vh;
+    font-family: "Pretendard Variable";
+    font-size: 1.04vw;
+    font-weight:600;
+    color: #8f8f8f;
+}
+.graph2 img {
+    width: 24.528vw;
+    height: 19.695vh;
+}
+
+.interview {
+    position: relative;
+    width: 100%;
+}
+.interview .label_interview {
+    position: absolute;
+    transform: translateY(-250%);
+    margin-left: 1.04vw;
+    padding: 0.3vh 0.7vw;
+    border-radius: 0.781vw;
+    background-color: #00FF48;
+    text-align: center;
+    font-family: "Pretendard Variable";
+    font-size: 1.04vw;
+    font-weight: 900;
+    color: #000;
+}
+.interview .name {
+    margin-bottom: 0.926vh;
+    font-family: "Pretendard Variable";
+    font-size: 1.3vw;
+    font-weight: 500;
+    color: #00FF48;
+}
+.interview .details {
+    font-family: "Pretendard Variable";
+    font-size: 1.04vw;
+    font-weight: 600;
+    color: #9c9c9c;
+}
+.intervieweeInof img {
+    margin-bottom: 3.7vh;
+}
+.interview_container1 {
+    display: flex;
+    /* height: 26.85vh; */
+    margin-top: 3.7vh;
+    margin-bottom: 4vh;
+    justify-content: space-between;
+}
+.interview_container2 {
+    display: flex;
+    /* height: 26.85vh; */
+    justify-content: space-between;
+}
+
+/* 개별 페이지 스타일 insight */
+.insight {
+    width: 100%;
+    height: 56.25vw;
+    padding-top: 12.083vw;
+}
+.insight .page_label {
+    text-align: center;
+}
+.insight .page_title {
+    text-align: center;
+}
+.insight .insight_content {
+    position: relative;
+    width: 100vw;
+    height: 27.396vw;
+}
+.insight1 {
+    position: relative;
+    top: 4.427vw;
+}
+.insight2 {
+    position: relative;
+    top: 0;
+}
+.insight3 {
+    position: relative;
+    top: 7.708vw;
+}
+.insightLine1 {
+    position: relative;
+    top: -7.396vw;
+}
+.insightLine2 {
+    position: relative;
+    top: -2.836vw;
+}
+/* 멜트 소개 페이지 */
+.melt0 {
+    position: relative;
+    width: 100%;
+    padding-top: 1px;
+}
+.melt0 .V1 {
+    position: absolute;
+    top: 12.03vw;
+    animation: float 3s ease-in-out infinite;
+}
+.melt0 .V2 {
+    position: absolute;
+    top: 34.06vw;
+    left: 14.844vw;
+    animation: float 3.5s ease-in-out infinite;
+    animation-delay: 0.5s;
+}
+.melt0 .V3 {
+    position: absolute;
+    top: 3.698vw;
+    right: 17.482vw;
+    animation: float 2.8s ease-in-out infinite;
+    animation-delay: 1s;
+}
+.melt0 .V4 {
+    position: absolute;
+    top: 24.115vw;
+    right: 0;
+    animation: float 3.2s ease-in-out infinite;
+    animation-delay: 0.2s;
+}
+.melt_info {
+    display: block;
+    width: 44.792vw;
+    height: 14.375vw;
+    margin: 25.05vw auto 0;
+}
+@keyframes float {
+    0% {
+        transform: translateY(0vw); /* 시작: 원래 위치 */
+    }
+    50% {
+        transform: translateY(-0.8vw); /* 중간: 10px 위로 이동 */
+    }
+    100% {
+        transform: translateY(0vw); /* 끝: 원래 위치로 복귀 */
+    }
+}
+
+
+/* 포지셔닝맵 */
+.positioningmap {
+    position: relative;
+    width: 100%;
+    height: 60.938vw;
+    padding: 14.583vw 10.417vw 0;
+}
+.pos_map {
+    position: absolute;
+}
+.pos_melt {
+    position: absolute;
+    top: 22.656vw;
+    left: 73.854vw;
+    animation: opacity 3s linear infinite;
+}
+@keyframes opacity {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
+
+/* 전시장소 교육 문화 */
+.practical {
+    width: 100%;
+    height: 67.865vw;
+    padding: 9.844vw 0 0 10.417vw;
+}
+.practical_title {
+    width: 16.927vw;
+    height: 8.385vw;
+    margin-bottom: 7.135vw;
+}
+.practical_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btns {
+    display: flex;
+    width: 8.75vw;
+    height: 14.479vw;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.btns span {
+    position: absolute;
+    width: 0.573vw;
+    height: 0.573vw;
+    background-color: #00FF48;
+    border-radius: 10vw;
+}
+.btn_J {
+    position: relative;
+    width: 4.896vw;
+    height: 1.875vw;
+    font-size: 1.25vw;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: -0.0125vw;
+    color: #00FF48;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+.O2 {
+    display: inline-block;
+}
+.btn_G {
+    position: relative;
+    width: 7.031vw;
+    height: 1.875vw;
+    font-size: 1.25vw;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: -0.0125vw;
+    color: #5F5F5F;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+.O2 {
+    display: none;
+}
+.btn_M {
+    position: relative;
+    width: 8.698vw;
+    height: 1.875vw;
+    font-size: 1.25vw;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: -0.0125vw;
+    color: #5F5F5F;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+.O3 {
+    display: none;
+}
+.practical_img {
+    width: 69.271vw;
+    height: 23.333vw;
+    background-image: url(img/practical_content1.png);
+    background-repeat: no-repeat;
+    transition: filter 0.5s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+/* 개별 페이지 스타일 design_concept */
+#Design {
+    width: 100%;
+}
+.design_concept {
+    width: 100%;
+}
+.design_concept .page_label {
+    margin: 17.5vh 10.5vw 2.3vh;
+}
+.design_concept .page_title {
+    margin: 0 10.5vw 4.63vh;
+}
+.design_concept p {
+    margin: 0 8vw 5.37vh 50.73vw;
+    font-size: 1.04vw;
+    font-weight: 400;
+    color: rgba(255,255,255,0.8);
+    line-height: 1.75;
+}
+.design_contanier {
+    /* position: relative; */
+    width: 100%;
+}
+.design_word {
+    display: flex;
+}
+.design_word h5 {
+    font-family: "Pretendard Variable";
+    font-size: 1.04vw;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.design_word .logo_box {
+    width: 50vw;
+    height: 30.05vw;
+    padding: 4.63vh 3.906vw;
+    background-color: #00FF48;
+}
+.logo_box h5 {
+    margin-bottom: 9.54vh;
+    color: #141516;
+}
+.design_word .keyword_box {
+    width: 50vw;
+    height: 30.05vw;;
+    padding: 4.63vh 3.906vw;
+    background-color: #141516;
+}
+.keyword_box h5 {
+    margin-bottom: 16.48vh;
+    color: #9B9B9B;
+}
+.keyword-item {
+    display: flex;
+    margin-bottom: 0.926vh;
+    justify-content: space-between;
+    align-items: center;
+}
+.keyword-item .english-word {
+    font-size: 2.865vw;
+    font-family: "HaasGrot Disp 55 Rm Trial";
+    line-height: 1.5;
+    letter-spacing: -0.02865vw;
+    color: #fff;
+}
+.keyword-item .korean-word {
+    font-size: 1.56vw;
+    line-height: 1.5;
+    letter-spacing: -0.0156vw;
+    color: #fff;
+}
+.design_color {
+    width: 100%;
+    background-color: #1E1E1E;
+}
+.design_color .color_guide {
+    position: relative;
+    height: 54.537vh;
+}
+.color_guide img {
+    position: absolute;
+}
+.color_guide .color_1 {
+    width: 7.708vw;
+    height: 7.708vw;
+    top: 15.185vh;
+    left: 4.427vw;
+}
+.color_guide .color_2 {
+    width: 7.708vw;
+    height: 7.708vw;
+    top: 28.89vh;
+    left: 16.51vw;
+}
+.color_guide .color_3 {
+    width: 8.594vw;
+    height: 7.708vw;
+    top: 23.056vh;
+    left: 33.8vw;
+}
+.color_guide .color_4 {
+    width: 7.708vw;
+    height: 7.708vw;
+    top: 50.463vh;
+    right: 36.98vw;
+}
+.color_guide .color_5 {
+    width: 7.708vw;
+    height: 7.708vw;
+    top: 12.315vh;
+    right: 31.667vw;
+}
+.color_guide .color_6 {
+    width: 7.917vw;
+    height: 8.54vw;
+    top: 26.02vh;
+    right: 19.531vw;
+}
+.color_guide .color_7 {
+    width: 8.281vw;
+    height: 8.02vw;
+    top: 7.778vh;
+    right: 1.406vw;
+}
+.design_color .color_info {
+    padding: 0 4.425vw 5.83vh;
+}
+.design_color .page_label {
+    margin: 0 0 1.4vh 0;
+}
+.design_color .info_text {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.info_text .en_info {
+    margin: 0 0;
+    font-size: 2.865vw;
+    font-family: "HaasGrot Disp 55 Rm Trial";
+    line-height: 1.5;
+    letter-spacing: -0.02865vw;
+    color: #fff;
+}
+.info_text .ko_info {
+    margin: 0 0;
+    font-size: 1.563vw;
+    font-family: "Pretendard Variable";
+    line-height: 1.5;
+    letter-spacing: -0.0156vw;
+    color: #fff;
+}
+
+.viruses {
+    width: 100%;
+    padding: 9.844vw 0 10.573vw;
+}
+.section_title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 9.85vw;
+}
+.section_title .highlight_tag {
+    display: inline-flex;
+    margin-left: 10.417vw;
+    padding: 0.3vh 1vw;
+    font-size: 1.563vw;
+    font-family: "Pretendard Variable";
+    line-height: 1.5;
+    letter-spacing: -0.0468vw;
+    color: #000;
+    border-radius: 1.38vw;
+    background-color: #00FF48;
+}
+.section_title p {
+    position: absolute;
+    width: 27.6vw;
+    left: 51vw;
+    font-size: 1.04vw;
+    font-family: "Pretendard Variable";
+    font-weight: 400;
+    color: rgba(255,255,255,0.8);
+    line-height: 1.75;
+}
+.viruses.section_title .highlight_tag {
+
+}
+.virus_image_container {
+    position: relative;
+    width: 100%;
+    height: 70.99vw;
+}
+.virus_image_container img {
+    position: absolute;
+}
+.v_img_astrax {
+    top: 1.51vw;
+    left: 8.23vw;
+}
+.v_img_segmentra {
+    top: 6.719vw;
+    left: 35.94vw;
+    transform: rotate(24.87deg);
+}
+.v_img_trilucis {
+    top: 0;
+    right: 10.833vw;
+}
+.v_img_cryohelix {
+    top: 21.51vw;
+    right: 19.48vw;
+}
+.v_img_tremora {
+    top: 37.188vw;
+    left: 11.875vw;
+}
+.v_img_hexora {
+    top: 50.885vw;
+    right: 9.48vw;
+}
+.v_img_dormicore {
+    top: 54.39vw;
+    left: 33.26vw;
+    transform: rotate(-25.12deg);
+}
+.v_img_amoeth {
+    top: 41.195vw;
+    right: 36.366vw;
+    transform: rotate(30.97deg);
+}
+.virus_image_container .name_box {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+.name_box span:nth-child(1) {
+    display: flex;
+    padding: 0 0.4vw;
+    font-size: 1.42vw;
+    font-family: "HaasGrot Disp 55 Rm Trial";
+    font-weight: 600;
+    line-height: 1.563vw;
+    letter-spacing: -0.02865vw;
+    background-color: #00FF48;
+    color: #000;
+}
+.name_box span:nth-child(2) {
+    font-size: 1.042vw;
+    font-family: "Pretendard Variable";
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: -0.03126vw;
+    color: #fff;
+}
+.virus_image_container .name1 {
+    top: 19.583vw;
+    left: 25.104vw;
+}
+.virus_image_container .name2 {
+    top: 28.854vw;
+    left: 46.146vw;
+}
+.virus_image_container .name3 {
+    top: 11.98vw;
+    right: 20.21vw;
+}
+.virus_image_container .name4 {
+    top: 36.927vw;
+    right: 17.708vw;
+}
+.virus_image_container .name5 {
+    top: 35.885vw;
+    left: 7.552vw;
+}
+.virus_image_container .name6 {
+    top: 61.458vw;
+    left: 22.292vw;
+}
+.virus_image_container .name7 {
+    top: 45.26vw;
+    right: 43.542vw;
+}
+.virus_image_container .name8 {
+    top: 66.51vw;
+    right: 19.01vw;
+}
+
+/* serma video 페이지 */
+.serma {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 17.813vw;
+}
+.serma .section_title {
+    position: absolute;
+    top: 12.135vw;
+}
+.serma_video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* story video 페이지 */
+.story {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10vh;
+}
+.story .section_title {
+    position: absolute;
+    top: 2.448vw;
+    z-index: 3;
+}
+.story_text {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    top: 11.3vw;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 3;
+}
+.story .story_ko {
+    width: 31.46vw;
+    margin: 0 auto;
+    margin-bottom: 0.78vw;
+    font-size: 1.042vw;
+    font-family: "Pretendard Variable";
+    font-weight: 400;
+    line-height: 1.8;
+    color: #fff;
+    text-align: center;
+}
+.story .story_en {
+    width: 44.167vw;
+    margin: 0 auto;
+    font-size: 1.042vw;
+    font-family: "Pretendard Variable";
+    font-weight: 400;
+    line-height: 1.5;
+    color: #4F4F4F;
+    text-align: center;
+}
+.story .story_en span {
+    display: inline-block;
+}
+.clock_video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    z-index: 1;
+}
+.thermometer {
+
+}
+.thermometer_video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.style_guide {
+    width: 100%;
+    padding: 13.8vw 7.03vw 7.656vw 7.03vw;
+}
+
+.used_products {
+    width: 100%;
+    padding: 9.427vw 10.313vw 5.729vw;
+}
+.interactive_moments {
+    position: relative;
+    width: 100%;
+    height: 60.469vw;
+    padding: 5.208vw 0 9.635vw 4.792vw;
+}
+.interactive_img {
+    position: absolute;
+}
+.move_btns {
+    position: absolute;
+    top: 41.094vw;
+    left: 25.156vw;
+    display: flex;
+    width: 9.323vw;
+    justify-content: space-between;
+}
+.move_btns .prev_btn {
+    width: 3.802vw;
+    height: 3.02vw;
+    background-image: url(img/prev_f.png);
+}
+.move_btns .next_btn {
+    width: 3.802vw;
+    height: 3.02vw;
+    background-image: url(img/next_t.png);
+}
+.move_btns .prev_btn, .move_btns .next_btn {
+    width: 3.802vw;
+    height: 3.02vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background-image 0.2s ease-in-out;
+}
+.btn-disabled {
+    cursor: default;
+}
+.btn-disabled:hover {
+    opacity: 1;
+    transform: scale(1);
+}
+.btn-active {
+    cursor: pointer;
+}
+
+.btn-active {
+    cursor: pointer;
+}
+.next_btn.btn-active:hover {
+    background-image: url(img/next_h.png) !important;
+}
+.prev_btn.btn-active:hover {
+    background-image: url(img/prev_h.png) !important;
+}
+.interactive_img {
+    width: 100%; 
+    height: auto;
+    /* transition: opacity 0.3s ease-in-out;  */
+}
+.final_video {
+    width: 100%;
+    height: 56.25vw;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 25.833vw;
+    padding: 2.604vw 4.427vw 3.646vw;
+    background-color: #141516;
+    justify-content: space-between;
+    align-items: flex-end;
+}
