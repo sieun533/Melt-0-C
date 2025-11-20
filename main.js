@@ -37,10 +37,6 @@ iconContainers.forEach(container => {
 });
 
 
-
-
-
-
 btnJ.addEventListener('click', () => {
     practicalImg.style.backgroundImage = 'url("img/practical_content1.png")';
 
