@@ -21,6 +21,25 @@ const moment2 = document.querySelector('.moment_2');
 const moment3 = document.querySelector('.moment_3');
 const momentSections = [moment1, moment2, moment3];
 
+const iconContainers = document.querySelectorAll('.icon');
+
+iconContainers.forEach(container => {
+    
+    container.addEventListener('mouseover', () => {
+
+        container.classList.add('is-hovered'); 
+    });
+
+    container.addEventListener('mouseout', () => {
+
+        container.classList.remove('is-hovered');
+    });
+});
+
+
+
+
+
 
 btnJ.addEventListener('click', () => {
     practicalImg.style.backgroundImage = 'url("img/practical_content1.png")';

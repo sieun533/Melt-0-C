@@ -53,10 +53,12 @@ header {
     display: flex;
     width: 100%;
     height: 7%;
-    padding-left: 2.5%;
-    padding-right: 3.5%;
+    padding: 2.5% 3.5% 2.5% 2.5%;
+    /* padding-left: 2.5%;
+    padding-right: 3.5%; */
     justify-content: space-between;
     align-items: center;
+    z-index: 10;
 }
 .logo {
     color: #00FF48;
@@ -89,8 +91,9 @@ nav a:hover {
 
 /* 메인 페이지 */
 #intro {
+    position: relative;
     width: 100vw;
-    min-height: 101.204vh;
+    min-height: 68.313rem;
     height: auto;
     background: linear-gradient(
         to bottom,
@@ -100,7 +103,7 @@ nav a:hover {
 #intro h1 {
     position: absolute;
     top: 95%;
-    right: 1.927vw;
+    right: 2.313rem;
     font-family: "Pretendard Variable";
     font-size: 1.375rem;
     font-weight: 400;
@@ -124,47 +127,85 @@ nav a:hover {
     height: 100%;
     object-fit: contain;
 }
+.icon .original_img, .icon .hover_img {
+    position:absolute;
+    transition: opacity 0.2s ease-in-out; 
+}
+.icon .original_img {
+    opacity: 1;
+}
+.icon .hover_img {
+    opacity: 0;
+}
+.icon.is-hovered .original_img {
+    opacity: 0;
+}
+.icon.is-hovered .hover_img {
+    opacity: 1;
+}
+
 .i_Hexora {
-    width: 13.646vw;
-    height: 23.333vh;
+    width: 16.438rem;
+    height: 15.813rem;
     top: 25.74%;
     left: 5.26%;
     z-index: 10;
 }
 .i_Astrax {
-    width: 31.789vw;
-    height: 55.118vh;
+    width: 38.188rem;
+    height: 37.25rem;
     top: 6.85%;
-    left: 24.58%; 
+    left: 24.58%;
+    z-index: 10; 
 }
 .i_Dormicore {
+    width: 19.125rem;
+    height: 26.75rem;
     top: 17.29%;
     left: 57.68%;
     transform: rotate(4.1deg);
+    z-index: 10;
 }
 .i_Cryohelix {
+    width: 14.625rem;
+    height: 22.063rem;
     top: 14.38%;
     right: 0;
+    z-index: 10;
 }
 .i_Segmentra {
+    width: 17.125rem;
+    height: 23.063rem;
     top: 53.23%;
     left: 0;
+    z-index: 10;
 }
 .i_Amoeth {
+    width: 29.813rem;
+    height: 24.813rem;
     bottom: 0%;
-    left: 4.48%;
+    left: 8.48%;
+    z-index: 10;
 }
 .i_Trilucis {
+    width: 20rem;
+    height: 19.125rem;
     top: 65.19%;
     left: 49.53%;
+    z-index: 10;
 }
 .i_Tremora {
+    width: 20.5rem;
+    height: 20.563rem;
     top: 57.04%;
     left: 79.58%;
+    z-index: 10;
 }
 .intro_paticle {
+    width: 114.75rem;
+    height: 57.188rem;
     position: absolute;
-    bottom: 2.41%;
+    bottom: 0;
     left: 3.073vw;
     z-index: 1;
 }
@@ -200,12 +241,12 @@ main .page_title .page_title_txt {
 .overview {
     display: flex;
     width: 100%;
-    height: 100vh;
+    height: 67.5rem;
     align-items: center;
 }
 .overview_content {
     width: 100%;
-    height: 75vh;
+    height: 50.625rem;
     text-align: center;
     align-content: center;
     background-image: url(img/overview_bg.jpg);
@@ -239,7 +280,7 @@ main .page_title .page_title_txt {
 .DR_content {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 67.5rem;
     padding: 12.5rem 12.5rem 0;
     margin: 0 auto;
     background-image: url(img/background_ice.png);
@@ -248,7 +289,7 @@ main .page_title .page_title_txt {
     background-position: center;
 }
 .DR_content span {
-    margin-bottom: 3.056vh;
+    margin-bottom: 2.063rem;
 }
 
 .case_container {
